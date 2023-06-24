@@ -58,11 +58,11 @@
 }
 
 .desc {
-  padding: 0 4rem;
+  padding: 0 1rem;
   margin-bottom: 4rem;
 
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 2;
 }
 
@@ -75,4 +75,19 @@
 
 .accurate {
   padding-left: 8px;
+}
+
+.fixed-camera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background: hsla(0, 0%, 40%, .6);
 }

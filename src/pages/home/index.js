@@ -1,4 +1,4 @@
-import Camera from "react-html5-camera-photo";
+import Camera, { FACING_MODES } from 'react-html5-camera-photo';
 import { useRef, useState } from "react";
 import { useLocationList, useWeather } from "hooks";
 import { LoadingBar } from "components/LoadingBar";
@@ -29,7 +29,7 @@ const Home = () => {
   const weatherResults = {
     Shine: shinyImg,
     Cloudy: cloudyImg,
-    Rain: rainyImg,
+    Rainy: rainyImg,
     Sunrise: sunriseImg,
   };
 
@@ -105,16 +105,18 @@ const Home = () => {
       </div>
     ),
     camera: (
-      <>
+      <div className="fixed-camera">
         <Camera
           onTakePhoto={(dataUri) => {
             handleTakePhoto(dataUri);
           }}
+          idealFacingMode={FACING_MODES.ENVIRONMENT}
+          isFullscreen
         />
         <button className="modal__btn" onClick={handleCancelCamera}>
           Cancel &times;
         </button>
-      </>
+      </div>
     ),
   };
 
