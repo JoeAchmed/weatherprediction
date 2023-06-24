@@ -1,0 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+/* defaults */
+/* =============================================== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --light: hsl(0, 0%, 100%);
+  --background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+
+  font-family: 'SF Pro Display', sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* min-height: 100vh; */
+  background: linear-gradient(to bottom, hsl(236, 50%, 98%), hsl(236, 50%, 94%));
+}
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+  font-family: 'SF Pro Display', sans-serif;
+}

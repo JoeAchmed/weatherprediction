@@ -1,0 +1,78 @@
+.title-app {
+  color: #EEEFF9;
+}
+
+.subtitle-app {
+  color: orange;
+}
+
+.HomeWrapper {
+  text-align: center;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* max-width: 500px; */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-container {
+  min-height: calc(100vh - 304px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.weather {
+  padding-top: 86px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.374px;
+
+  /* Label/Dark/Primary */
+  color: #FFFFFF;
+  height: 183px;
+}
+
+.weather > p {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.main-container {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.desc {
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.result {
+  color: orange;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.accurate {
+  padding-left: 8px;
+}
