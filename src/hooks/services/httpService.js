@@ -5,7 +5,6 @@ export const httpServiceWeather = axios.create({
   baseURL: process.env.REACT_APP_API_WEATHER,
   headers: {
     'Content-Type': 'multipart/form-data',
-    "Access-Control-Allow-Origin": "*",
   }
 });
 
@@ -15,7 +14,6 @@ export const httpServiceLocation = axios.create({
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
     'X-RapidAPI-Host': process.env.REACT_APP_API_HOST_LOCATION,
-    "Access-Control-Allow-Origin": "*",
   }
 });
 
